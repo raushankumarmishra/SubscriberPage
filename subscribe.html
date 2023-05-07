@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buttons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about {
+  margin-bottom: 100px auto;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgb(220, 225, 236);
+}
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(220, 225, 236);
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="email"] {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(246, 241, 241);
+  border-radius: 10px;
+}
+
+button[type="submit"],
+.button {
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 400px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* .button-secondary {
+    width: 400px;
+  background-color: #555;
+} */
+
+/* .button-tertiary {
+    width: 400px;
+  background-color: #eee;
+  color: #333;
+} */
+
+button[type="submit"]:hover,
+.button:hover {
+    
+  background-color: #65b3cd;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+  
+  input[type=""] {
+    width: 100%;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .button {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  .button:last-child {
+    margin-bottom: 300px;
+  }
+  #field{
+    border-radius: 4px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Subscribe to our Channel:</h1>
+    <form action="#" method="post">
+      <label for="number" id="field">Enter your number or id</label>
+      <input type="text"  placeholder="Enter your telegram number/id:" required>
+     
+    </form>
+
+    <div class="button-container">
+        <button type="submit" class="button button-tertiary">2,499 -/ for 1 month.</button>
+      <button class="button">5,999 -/ for 6 month.</button>
+      <button class="button">7,999 -/ for 1 year.</button>
+      <button class="button">continue for payment.</button>
+    </div>
+  </div>
+  <div class="container">
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We are a financial services company that specializes in trading stocks. Our team of experienced traders is dedicated to providing our clients with high-quality investment advice and personalized portfolio management services. Subscribe to our telegram to get free calls with the latest market trends and trading techniques.</p>
+      </section>
+  </div>
+  
+</body>
+</html>
